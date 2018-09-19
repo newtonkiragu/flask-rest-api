@@ -7,11 +7,15 @@ class Config(object):
     DEBUG = False
     CSRF_ENABLED = True
 
+class DevConfig(Config):
+    '''
+    Development configuration child class
+    
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
 
-class Development(Config):
-    #Configuration for development
     DEBUG = True
-
 
 class Testing(Config):
     '''Configuration for testing'''
@@ -29,8 +33,8 @@ class Production(Config):
     TESTING = False
 
 
-app_config = {
-    'development': Development,
+config_options = {
+    'development': DevConfig,
     'testing': Testing,
     'staging' : StagingConfig,
     'production': Production
