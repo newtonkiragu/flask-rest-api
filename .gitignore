@@ -91,6 +91,8 @@ ENV/
 env.bak/
 venv.bak/
 myenv/
+virtual/
+gitignore
 
 
 
@@ -107,3 +109,4 @@ myenv/
 
 # mypy
 .mypy_cache/
+.vscode/
