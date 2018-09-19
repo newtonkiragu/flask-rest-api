@@ -94,6 +94,11 @@ myenv/
 virtual/
 gitignore
 
+# auto generated files
+sys
+os
+inspect
+
 
 
 
